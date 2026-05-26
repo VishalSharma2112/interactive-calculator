@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css">        
+</head>
+<body>
+    <div class="main-css">
+        <div class="display-css">
+            <div class="history-css history-js"></div>
+            <input placeholder="0" class="input-css input-js" type="text" readonly>
+        </div>
+        <div class="keyboard-css">
+            <div class="buttons-css">
+            <button class="color-bg-ops" onclick="ACjs()">AC</button>
+            <button class="color-bg-ops" onclick="OperatorClick('%')">%</button>
+            <button class="color-bg-ops" onclick="Deljs()">DEL</button>
+            <button class="color-bg-ops" onclick="OperatorClick('/')">/</button>
+        </div>
+        <div class="buttons-css">
+            <button class="color-bg-nums" onclick="numberClick(7)">7</button>
+            <button class="color-bg-nums" onclick="numberClick(8)">8
+            </button>
+            <button class="color-bg-nums" onclick="numberClick(9)">9</button>
+            <button class="color-bg-ops" onclick="OperatorClick('x')">x</button>
+        </div>
+                <div class="buttons-css">
+            <button class="color-bg-nums" onclick="numberClick(4)">4</button>
+            <button class="color-bg-nums" onclick="numberClick(5)">5</button>
+            <button class="color-bg-nums" onclick="numberClick(6)">6</button>
+            <button class="color-bg-ops" onclick="OperatorClick('-')">-</button>
+        </div>
+        <div class="buttons-css">
+            <button class="color-bg-nums" onclick="numberClick(1)">1</button>
+            <button class="color-bg-nums" onclick="numberClick(2)">2</button>
+            <button class="color-bg-nums" onclick="numberClick(3)">3</button>
+            <button class="color-bg-ops" onclick="OperatorClick('+')">+</button>
+        </div>
+        <div class="buttons-css">
+            <button class="color-bg-nums" onclick="numberClick('00')">00</button>
+            <button class="color-bg-nums" onclick="numberClick(0)">0</button>
+            <button class="color-bg-nums" onclick="DecimalClick('.')">.</button>
+            <button class="color-bg-equal" onclick="EqualClick()">=</button>
+        </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

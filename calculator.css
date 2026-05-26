@@ -1,0 +1,100 @@
+    body{
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .main-css{
+        border-radius: 20px;
+        padding-top: 10px;
+        height: 700px;
+        width: 450px;
+        background-color: rgb(41, 37, 37);
+    }
+    .display-css{
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        
+        margin-left: 10px;
+        height: 130px;
+        width: 430px;
+        background-color: rgb(255, 255, 255);
+    }
+    .buttons-css{
+        display: flex;
+        gap: 14px;
+        padding: 10px;
+    }
+    .keyboard-css{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(38, 38, 39);
+    }
+    button{
+        font-weight: bold;
+        font-size: xx-large;
+        color: aliceblue;
+        height: 90px;
+        width: 90px;
+        border: none;
+        border-radius: 100%;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+        transition: 
+            transform 0.15s ease,
+            opacity 0.15 ease,
+            background-color 0.15 ease;
+    }
+
+    button:hover{
+        opacity: 0.8;
+        transform: scale(1.03);
+    }
+    button:active{
+        transform: scale(0.97);
+        opacity: 1;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+        background-color: rgb(96, 96, 96);
+    }
+    .color-bg-nums{
+        background-color: rgb(59, 59, 59);
+    }
+    .color-bg-ops{
+        background-color: rgb(44, 45, 45);
+    }
+    .color-bg-equal{
+        background-color: rgb(255, 125, 45);
+    }
+    .input-css{
+        margin-top: 20px;
+        caret-color: rgb(255, 125, 45);
+        outline: none;
+        font-weight: bold;
+        border: none;
+        font-size: 40px;
+        text-align: right;
+        width: 426px;
+        height: 70px;
+    }
+    .history-css{
+        display: flex;
+        align-items: flex-end;
+        justify-content: end;
+        width: 420px;
+        height: 40px;
+        font-size: 16px;
+        padding-right: 10px;
+        color: rgb(83, 82, 82);
+    }
